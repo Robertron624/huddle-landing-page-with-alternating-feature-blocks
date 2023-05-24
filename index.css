@@ -1,0 +1,164 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+body {
+    /* Set core body defaults */
+
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --pink: hsl(322, 100%, 66%);
+
+    /* ### Neutral */
+
+    --very-pale-cyan: hsl(193, 100%, 96%);
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --grayish-blue: hsl(208, 11%, 55%);
+
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    background-color: var(--very-pale-cyan);
+}
+
+header .logo {
+    width: 6rem;
+    height: 1rem;
+}
+
+header button {
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 1px 0 1px rgba(0, 0, 0, .2);
+    width: 6rem;
+    padding: .3rem 0;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    text-align: center;
+}
+
+section.intro {
+    background-image: url(/images/bg-hero-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--very-pale-cyan);
+    padding: 2rem 0 2rem;
+
+}
+
+section.intro h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    width: 68%;
+    margin-inline: auto;
+}
+
+section.intro p {
+    font-size: .85rem;
+    width: 74%;
+    margin-inline: auto;
+    margin-bottom: 1.5rem;
+}
+
+section.intro button {
+    background-color: var(--pink);
+    color: white;
+    width: 60%;
+    border: none;
+    border-radius: 30px;
+    padding: .7rem 0;
+    font-size: .75rem;
+    font-weight: 700;
+    font-family: 'Open Sans';
+}
+
+section.intro .hero {
+    margin-top: 3rem;
+    width: 80%;
+    margin-inline: auto;
+}
