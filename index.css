@@ -98,6 +98,10 @@ h1, h2, h3, h4 {
     font-family: 'Poppins', sans-serif;
 }
 
+button {
+    cursor: pointer;
+}
+
 /*************/
 /* Header    */
 /*************/
@@ -131,6 +135,7 @@ header button {
     font-size: 10px;
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
+    color: var(--grayish-blue);
 }
 
 /*************/
@@ -173,6 +178,11 @@ section.intro button {
     font-size: .75rem;
     font-weight: 700;
     font-family: 'Open Sans';
+    transition: all .3s ease-in-out;
+}
+
+section.intro button:hover {
+    opacity: .7;
 }
 
 section.intro .hero {
@@ -264,6 +274,11 @@ footer .get-started button {
     border: none;
     padding: .5rem 0;
     box-shadow: 0px 3px 0 1px rgba(0, 0, 0, .3);
+    transition: all .3s ease-in-out;
+}
+
+footer .get-started button:hover {
+    opacity: .7;
 }
 
 footer .logo-container {
@@ -317,6 +332,11 @@ footer .contact {
 .useful-links ul li a {
     color: white;
     text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.useful-links ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Social networks */
@@ -333,7 +353,7 @@ div.social ul{
 
 div.social ul li i {
     color: white;
-    border: 1px solid;
+    border: 1px solid white;
     width: 1.7rem;
     height: 1.7rem;
     display: flex;
@@ -342,6 +362,12 @@ div.social ul li i {
     border-radius: 50px;
     font-size: .8rem;
     margin-bottom: 2rem;
+    transition: all .3s ease-in-out;
+}
+
+div.social ul li i:hover {
+    color: var(--pink);
+    border: 1px solid var(--pink);
 }
 
 .copyright {
@@ -355,10 +381,21 @@ div.social ul li i {
         background-image: url(/images/bg-hero-desktop.svg);
     }
 
+    header .logo {
+        width: 13rem;
+        height: 2rem;
+    }
+
     header .top {
         max-width: var(--custom-mw);
         margin-inline: auto;
         padding: 2rem 0;
+    }
+
+    header .top button {
+        width: 10rem;
+        font-size: .9rem;
+        padding: .8rem 0;
     }
 
     section.intro {
@@ -367,6 +404,10 @@ div.social ul li i {
         grid-template-columns: 1fr 2fr;
         text-align: left;
         margin-inline: auto;
+    }
+
+    section.intro button {
+        padding: .85rem 0;
     }
 
     section.intro .texts p,
@@ -422,6 +463,7 @@ div.social ul li i {
     footer .get-started button {
         width: 40%;
         font-size: .8rem;
+        padding: .85rem 0;
     }
 
     footer .links {
