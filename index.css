@@ -90,6 +90,8 @@ body {
 
 
     font-family: 'Open Sans', sans-serif;
+
+    --custom-mw: 1300px;
 }
 
 h1, h2, h3, h4 {
@@ -101,6 +103,13 @@ h1, h2, h3, h4 {
 /*************/
 
 header {
+    background-image: url(/images/bg-hero-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--very-pale-cyan);
+}
+
+header .top{
     display: flex;
     justify-content: space-between;
     padding: 2rem 1rem;
@@ -136,12 +145,8 @@ main {
 /* Intro section */
 
 section.intro {
-    background-image: url(/images/bg-hero-mobile.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: var(--very-pale-cyan);
     padding: 2rem 0 2rem;
-
+    text-align: center;
 }
 
 section.intro h1 {
@@ -341,4 +346,64 @@ div.social ul li i {
 .copyright {
     color: white;
     font-size: .75rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    header {
+        background-image: url(/images/bg-hero-desktop.svg);
+    }
+
+    header .top {
+        max-width: var(--custom-mw);
+        margin-inline: auto;
+        padding: 2rem 0;
+    }
+
+    section.intro {
+        max-width: var(--custom-mw);
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        text-align: left;
+        margin-inline: auto;
+    }
+
+    section.intro .texts p,
+    section.intro .texts h1{
+        width: unset;
+    }
+
+    section.intro .texts h1 {
+        font-size: 1.8rem;
+    }
+
+    section.intro .hero {
+        margin-top: 0;
+        margin-inline: unset;
+        margin-left: auto;
+    }
+
+    section.features .feature {
+        height: unset;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+
+    .feature:nth-of-type(odd) img {
+        order: 1;
+    }
+
+    .feature .texts {
+        width: 70%;
+    }
+
+    .feature .texts p {
+        width: unset;
+        font-size: 1rem;
+    }
+
+    .feature .texts h2 {
+        font-size: 1.5rem;
+    }
 }
