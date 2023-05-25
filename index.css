@@ -236,6 +236,7 @@ footer {
 }
 
 footer .get-started {
+    max-width: 700px;
     text-align: center;
     background-color: white;
     width: 90%;
@@ -405,5 +406,46 @@ div.social ul li i {
 
     .feature .texts h2 {
         font-size: 1.5rem;
+    }
+
+    /* Footer    */
+
+    footer .get-started {
+        width: 50%;
+        top: -19.5%;
+    }
+
+    footer .get-started h2 {
+        font-size: 1.5rem;
+    }
+
+    footer .get-started button {
+        width: 40%;
+        font-size: .8rem;
+    }
+
+    footer .links {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .links .contact,
+    footer .links .useful-links {
+        width: unset;
+        margin-inline: unset;
+    }
+
+    footer .links .contact {
+        max-width: 23%;
+    }
+
+    footer .links .social {
+        margin-top: 0;
+    }
+
+    footer .copyright {
+        width: 90%;
+        text-align: right;
     }
 }
