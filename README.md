@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github repository](https://github.com/Robertron624/huddle-landing-page-with-alternating-feature-blocks)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Link]([https://your-live-site-url.com](https://magical-pixie-ba143f.netlify.app/))
 
 ## My process
 
